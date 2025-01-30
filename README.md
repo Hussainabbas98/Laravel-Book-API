@@ -65,21 +65,21 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-##README FILE FOR PROJECT
-API Endpoints
-Base URL
+**##README FILE FOR PROJECT**
+**API Endpoints**
+**Base URL**
 http://localhost/api/
-END POINTS
-Method  Endpoint     Description
+**END POINTS**
+**Method  Endpoint     Description**
 GET     /books       Retrieve all books
 POST    /books       Create a new book
 GET     /books/{id}  Retrieve a single book by ID
 PUT     /books/{id}  Update a book by ID
 DELETE  /books/{id}  Delete a book by ID
 
-Database Structure
+**Database Structure**
 The books table consists of the following fields:
-Column     Type      Description
+**Column     Type      Description**
 id         int       Primary key
 title      string    Book title
 author     string    Book author
@@ -88,11 +88,11 @@ category   string    Book category
 created_at timestamp Timestamp
 updated_at timestamp Timestamp
 
-Model
+**Model**
 The Book model defines the fillable fields:
 protected $fillable = ['title', 'author', 'isbn', 'category'];
 
-Controller
+**Controller**
 The BookController implements the CRUD operations for books with JSON responses:
 index() - Retrieves all books
 store(Request $request) - Creates a new book
@@ -100,5 +100,5 @@ show($id) - Retrieves a single book
 update(Request $request, $id) - Updates a book
 destroy($id) - Deletes a book
 
-License
+**License**
 This project is open-source and available under the MIT License.
