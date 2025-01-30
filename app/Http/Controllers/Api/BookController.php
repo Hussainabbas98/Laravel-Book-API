@@ -16,7 +16,6 @@ class BookController extends Controller
     {
         //without message
         // return Book::all();
-
         //with message
         $books = Book::all();
             return response()->json([
